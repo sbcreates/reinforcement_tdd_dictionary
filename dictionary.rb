@@ -20,4 +20,13 @@ class Dictionary
     @entries.keys
   end
 
+  def include?(keyword)
+    @entries.include?(keyword)
+  end
+
+  def find(keyword)
+    
+
+
+
 end
