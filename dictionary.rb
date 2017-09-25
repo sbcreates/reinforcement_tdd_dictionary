@@ -28,7 +28,14 @@ class Dictionary
   end
 
   def find(search)
-
+    result = {}
+    @entries.each do |keyword, definition|
+      if keyword.start_with?(search)
+        result[keyword] = definition
+      end
+    end
+    result
   end
+
 
 end
