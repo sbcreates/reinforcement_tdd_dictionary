@@ -1,3 +1,5 @@
+require "pry"
+
 class Dictionary
 
   def initialize
@@ -17,16 +19,16 @@ class Dictionary
   end
 
   def keywords
-    @entries.keys
+    keywords = @entries.keys
+    keywords.sort
   end
 
-  def include?(keyword)
-    @entries.include?(keyword)
+  def include?(search)
+    @entries.include?(search)
   end
 
-  def find(keyword)
-    
+  def find(search)
 
-
+  end
 
 end
